@@ -328,7 +328,38 @@ padding-bottom: 120px;
     text-transform: capitalize;
     color: #2E2F42;
     margin-bottom: 49px;
+    
 }
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-item {
+    width: calc((100%-120px)/6);
+    height: 88px;
+}
+.customers-soc-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    display: block;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: #8E8F99;
+
+}
+.customers-soc_icon{
+    fill: #8E8F99;
+}
+.customers-soc-link:hover{
+    border-color: #404BBF;
+}
+.customers-soc-link:hover .customers-soc_icon{
+    fill: #404BBF;
+}
+
+
 
 /*-----------------------------------------------------Footer-----------------------------------------------*/
 
@@ -360,35 +391,6 @@ padding-bottom: 120px;
     height: 72px; 
 
 }
-.customers-list {
-    display: flex;
-    gap: 24px;
-}
-.customers-item {
-    width: calc((100%-120px)/6);
-    height: 88px;
-}
-.customers-soc-link {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #8E8F99;
-    display: block;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    color: #8E8F99;
-
-}
-.customers-soc_icon{
-    fill: #8E8F99;
-}
-.customers-soc-link:hover{
-    border-color: #404BBF;
-}
-.customers-soc-link:hover .customers-soc_icon{
-    fill: #404BBF;
-}
-
 
 
 /*-----------------------------------------------------Portfolio-----------------------------------------------*/
