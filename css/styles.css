@@ -1,4 +1,4 @@
-body{
+  body{
     font-family: 'Roboto','Raleway', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -283,7 +283,53 @@ a:hover{
     letter-spacing: 0.02em;
     color: var(--text-color-gray);
     text-align: center;
+    margin-bottom: 8px;
 }
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+
+}
+.team-soc-link:is(:hover,:focus){
+    background:#404BBF;
+
+}
+
+
+/* ------------------------------------------------------Customers-------------------------------------------------------- */
+.customers{
+padding-top: 120px;
+padding-bottom: 120px;
+
+}
+.customers-title{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 49px;
+}
+
 /*-----------------------------------------------------Footer-----------------------------------------------*/
 
 .footer{
@@ -314,6 +360,37 @@ a:hover{
     height: 72px; 
 
 }
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-item {
+    width: calc((100%-120px)/6);
+    height: 88px;
+}
+.customers-soc-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    display: block;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: #8E8F99;
+
+}
+.customers-soc_icon{
+    fill: #8E8F99;
+}
+.customers-soc-link:hover{
+    border-color: #404BBF;
+}
+.customers-soc-link:hover .customers-soc_icon{
+    fill: #404BBF;
+}
+
+
+
 /*-----------------------------------------------------Portfolio-----------------------------------------------*/
 
 
