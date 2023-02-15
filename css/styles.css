@@ -1,5 +1,6 @@
   body{
     font-family: 'Roboto','Raleway', sans-serif;
+
 }
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
@@ -21,22 +22,6 @@ a:hover{
     color: #404BBF;
 }
 
-.logo-button{
-    background: #4D5AE5;
-}
-
-.logo-button:hover{
-    background: #404BBF;
-}
-
-.button{
-    background: #F4F4FD;  
-}
-
-.button:hover{
-    background: #404BBF;
-    color: #FFFFFF;
-}
 
 :root{
     --text-color-dark: #2E2F42;
@@ -48,7 +33,9 @@ a:hover{
     padding-top: 24px;
     border-bottom: 1px solid #E7E9FC;
     padding-bottom: 24px;
-    
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16), 
+     0px 1px 6px rgba(46, 47, 66, 0.08);
         
 
 }
@@ -64,7 +51,7 @@ a:hover{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     
 }
 
@@ -139,6 +126,10 @@ a:hover{
 
 .logo-image {
     background: #2E2F42;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-size: cover;
+    
     padding-top: 188px;
     padding-bottom: 188px;
     display: block;
@@ -169,11 +160,12 @@ a:hover{
     color: #FFFFFF;
     padding: 16px 32px; 
     background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     border-radius: 4px;
     
-      
-
+}
+.logo-button:hover{
+    background: #404BBF;
 }
 
 /*-----------------------------------------------------strategy-----------------------------------------------*/
@@ -181,15 +173,23 @@ a:hover{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .strategy-list {
   
     display: flex;
     gap: 24px;
 }
-.conteiner-text-main{
-    height: 104px;
+
+.strategy-soc-item{
+  
     width: 264px;
+    height: 112px;
+    padding: 24px 100px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
+
 
 .strategy-item-title {
     width: 264px;
@@ -302,6 +302,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    fill:#F4F4FD;
 
 
 }
@@ -346,16 +347,15 @@ padding-bottom: 120px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    color: #8E8F99;
 
 }
-.customers-soc_icon{
+.customers-soc-icon{
     fill: #8E8F99;
 }
 .customers-soc-link:hover{
     border-color: #404BBF;
 }
-.customers-soc-link:hover .customers-soc_icon{
+.customers-soc-link:hover .customers-soc-icon{
     fill: #404BBF;
 }
 
@@ -367,6 +367,11 @@ padding-bottom: 120px;
     background-color: var(--text-color-dark);
     padding-top: 100px;
     padding-bottom: 100px;
+    
+}
+.footer-head{
+    display: flex;
+    gap: 120px;
 }
 .webstudio-footer{
     font-family: 'Raleway';
@@ -390,6 +395,48 @@ padding-bottom: 120px;
     width: 264px;
     height: 72px; 
 
+}
+.footer-text-web{
+    height: 110px;
+    width: 264px;
+}
+.footer-social-media {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-social{
+    width: 208px;
+    height: 80px;
+
+}
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.footer-soc-link {
+     width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.1);;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill:#F4F4FD;
+
+}
+.footer-soc-link:is(:hover,:focus){
+    background:#31D0AA;
+ 
 }
 
 
@@ -427,6 +474,10 @@ padding-bottom: 120px;
     
 }
 
+.button:hover{
+    background: #404BBF;
+    color: #FFFFFF;
+}
 .card{
     display: flex;
     flex-wrap: wrap;
@@ -468,8 +519,3 @@ padding-bottom: 120px;
    
 }
 
-.footer-portfolio{
-  background-color: var(--text-color-dark);
-  padding-top: 100px;
-  padding-bottom: 100px; 
-}
